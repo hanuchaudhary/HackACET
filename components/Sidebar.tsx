@@ -46,6 +46,12 @@ export function Sidebar() {
       href: "/dashboard/analytics",
       icon: <BarChart2 className="h-5 w-5" />,
     },
+    {
+      value: "profile",
+      label: "Profile",
+      href: "/dashboard/profile",
+      icon: <BarChart2 className="h-5 w-5" />,
+    },
   ];
 
   // Determine the active item based on the current pathname

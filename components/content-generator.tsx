@@ -7,6 +7,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Loader2, RefreshCw, Twitter } from "lucide-react";
 import { useContentGeneratorStore } from "@/store/useContentGenerateStore";
+import { useEffect } from "react";
+import { redirect } from "next/navigation";
+import { useAuthStore } from "@/store/useAuthStore";
 
 export function ContentGenerator() {
   const {
@@ -25,6 +28,19 @@ export function ContentGenerator() {
     handleDownload,
     setSelectedIdea,
   } = useContentGeneratorStore();
+
+  const { fetchUser, userAccounts, user, isLoading } = useAuthStore();
+
+  useEffect(() => {
+    fetchUser();
+
+    if (userAccounts && userAccounts.length === 0) {
+      redirect("/dashboard/profile");
+    }
+  }, []);
+
+  console.log("User Accounts:", userAccounts);
+  console.log("User:", user);
 
   return (
     <div className="grid gap-6 md:grid-cols-2">
@@ -149,7 +165,10 @@ export function ContentGenerator() {
               <Button onClick={() => handleDownload("png")} variant="secondary">
                 Download PNG
               </Button>
-              <Button onClick={() => handleDownload("jpeg")} variant="secondary">
+              <Button
+                onClick={() => handleDownload("jpeg")}
+                variant="secondary"
+              >
                 Download JPEG
               </Button>
               <Button onClick={() => handleDownload("jpg")} variant="secondary">
