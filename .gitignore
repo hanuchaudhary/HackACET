@@ -9,6 +9,7 @@
 
 # production
 /build
+/lib/generated/prisma/
 
 # debug
 npm-debug.log*
