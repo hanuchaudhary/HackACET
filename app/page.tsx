@@ -13,13 +13,13 @@ export default function Home() {
         <HomePage />
 
         <section id="features" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                   Powerful Features
                 </h2>
-                <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                <p className="max-w-[900px] text-neutral-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-neutral-400">
                   Everything you need to create engaging Twitter content
                 </p>
               </div>
@@ -28,21 +28,21 @@ export default function Home() {
               <div className="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm">
                 <Sparkles className="h-12 w-12 text-blue-500" />
                 <h3 className="text-xl font-bold">AI-Powered Ideas</h3>
-                <p className="text-sm text-gray-500 text-center dark:text-gray-400">
+                <p className="text-sm text-neutral-500 text-center dark:text-neutral-400">
                   Generate creative post ideas based on your keywords and topics
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm">
                 <ImageIcon className="h-12 w-12 text-blue-500" />
                 <h3 className="text-xl font-bold">Image Generation</h3>
-                <p className="text-sm text-gray-500 text-center dark:text-gray-400">
+                <p className="text-sm text-neutral-500 text-center dark:text-neutral-400">
                   Create stunning visuals that match your post content
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm">
                 <Twitter className="h-12 w-12 text-blue-500" />
                 <h3 className="text-xl font-bold">Direct Posting</h3>
-                <p className="text-sm text-gray-500 text-center dark:text-gray-400">
+                <p className="text-sm text-neutral-500 text-center dark:text-neutral-400">
                   Share your content directly to Twitter with one click
                 </p>
               </div>
@@ -52,15 +52,15 @@ export default function Home() {
 
         <section
           id="how-it-works"
-          className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 dark:bg-gray-900"
+          className="w-full py-12 md:py-24 lg:py-32 bg-neutral-50 dark:bg-neutral-900"
         >
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                   How It Works
                 </h2>
-                <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                <p className="max-w-[900px] text-neutral-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-neutral-400">
                   Create engaging Twitter content in four simple steps
                 </p>
               </div>
@@ -71,7 +71,7 @@ export default function Home() {
                   1
                 </div>
                 <h3 className="text-lg font-bold">Enter Keywords</h3>
-                <p className="text-sm text-gray-500 text-center dark:text-gray-400">
+                <p className="text-sm text-neutral-500 text-center dark:text-neutral-400">
                   Input topics or keywords relevant to your content
                 </p>
               </div>
@@ -80,7 +80,7 @@ export default function Home() {
                   2
                 </div>
                 <h3 className="text-lg font-bold">Select an Idea</h3>
-                <p className="text-sm text-gray-500 text-center dark:text-gray-400">
+                <p className="text-sm text-neutral-500 text-center dark:text-neutral-400">
                   Choose from AI-generated post ideas
                 </p>
               </div>
@@ -89,7 +89,7 @@ export default function Home() {
                   3
                 </div>
                 <h3 className="text-lg font-bold">Generate Image</h3>
-                <p className="text-sm text-gray-500 text-center dark:text-gray-400">
+                <p className="text-sm text-neutral-500 text-center dark:text-neutral-400">
                   Create a visual that complements your post
                 </p>
               </div>
@@ -98,7 +98,7 @@ export default function Home() {
                   4
                 </div>
                 <h3 className="text-lg font-bold">Post to Twitter</h3>
-                <p className="text-sm text-gray-500 text-center dark:text-gray-400">
+                <p className="text-sm text-neutral-500 text-center dark:text-neutral-400">
                   Share directly to your Twitter account
                 </p>
               </div>
@@ -108,14 +108,14 @@ export default function Home() {
 
         <PricingSection />
 
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-50 dark:bg-gray-900">
-          <div className="container px-4 md:px-6">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-50 dark:bg-neutral-900">
+          <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                   Ready to Transform Your Twitter Content?
                 </h2>
-                <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                <p className="max-w-[900px] text-neutral-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-neutral-400">
                   Join thousands of content creators who are saving time and
                   creating better content
                 </p>
@@ -132,29 +132,29 @@ export default function Home() {
         </section>
       </main>
       <footer className="border-t py-6 md:py-0">
-        <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row px-4 md:px-6">
+        <div className="container mx-auto flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row px-4 md:px-6">
           <div className="flex items-center gap-2">
             <Sparkles className="h-5 w-5 text-blue-500" />
-            <p className="text-sm text-gray-500 dark:text-gray-400">
+            <p className="text-sm text-neutral-500 dark:text-neutral-400">
               © 2025 TweetCraft. All rights reserved.
             </p>
           </div>
           <div className="flex gap-4">
             <Link
               href="#"
-              className="text-sm text-gray-500 hover:underline underline-offset-4 dark:text-gray-400"
+              className="text-sm text-neutral-500 hover:underline underline-offset-4 dark:text-neutral-400"
             >
               Terms
             </Link>
             <Link
               href="#"
-              className="text-sm text-gray-500 hover:underline underline-offset-4 dark:text-gray-400"
+              className="text-sm text-neutral-500 hover:underline underline-offset-4 dark:text-neutral-400"
             >
               Privacy
             </Link>
             <Link
               href="#"
-              className="text-sm text-gray-500 hover:underline underline-offset-4 dark:text-gray-400"
+              className="text-sm text-neutral-500 hover:underline underline-offset-4 dark:text-neutral-400"
             >
               Contact
             </Link>

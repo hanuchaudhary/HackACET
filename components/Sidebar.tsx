@@ -3,13 +3,10 @@
 
 import { motion } from "motion/react";
 import { usePathname, redirect } from "next/navigation";
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 import Link from "next/link";
-import {
-  LayoutDashboard,
-  History,
-  BarChart2,
-} from "lucide-react"; // Icons for sidebar items
+import { LayoutDashboard, History, BarChart2, User } from "lucide-react"; // Icons for sidebar items
+import { useAuthStore } from "@/store/useAuthStore";
 
 interface SidebarItem {
   value: string;
@@ -50,9 +47,20 @@ export function Sidebar() {
       value: "profile",
       label: "Profile",
       href: "/dashboard/profile",
-      icon: <BarChart2 className="h-5 w-5" />,
+      icon: <User className="h-5 w-5" />,
     },
   ];
+
+  const { fetchUser, userAccounts, user, isLoading } = useAuthStore();
+  useEffect(() => {
+    if (!user || isLoading) {
+      fetchUser();
+    }
+
+    return () => {
+      // Cleanup if needed
+    };
+  }, []);
 
   // Determine the active item based on the current pathname
   const activeItem =
@@ -79,7 +87,7 @@ export function Sidebar() {
                 href={item.href}
                 className={`flex items-center gap-3 px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                   activeItem === item.value
-                    ? "bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-200"
+                    ? "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200"
                     : "text-neutral-600 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-700"
                 }`}
               >

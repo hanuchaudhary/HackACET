@@ -11,9 +11,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'cdn.discordapp.com',
-        port: '',
-        pathname: '/attachments/**',
+        hostname: 'avatars.githubusercontent.com',
       },
       {
         protocol: 'https',
